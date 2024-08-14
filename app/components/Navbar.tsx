@@ -21,9 +21,6 @@ export default function Navbar() {
       <Link href="/portals" className={pathname === '/portals' ? 'active' : ''}>
         Portal
       </Link>
-      <Link href="/portals/detail" className={pathname === '/portals/detail' ? 'active' : ''}>
-        Portal Detail
-      </Link>
     </nav>
   );
 }
