@@ -1,7 +1,7 @@
 async function getPortalDetail(slug: string) {
   try {
-    const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || '';
-    const PORTAL_PREFIX = process.env.NEXT_PUBLIC_PORTAL_PREFIX || '';
+    const BASE_URL = process.env.BASE_URL || '';
+    const PORTAL_PREFIX = process.env.PORTAL_PREFIX || '';
     const url = BASE_URL + PORTAL_PREFIX + '/' + slug;
 
     const response = await fetch(url, {

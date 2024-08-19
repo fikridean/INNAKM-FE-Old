@@ -10,16 +10,26 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Image
-        src={Logo}
-        alt='INNAKM'
-        width={70}
-        placeholder='blur'
-        quality={100}
-      />
-      <h1>INNAKM</h1>
+      <Link href="/">
+        <Image
+          src={Logo}
+          alt='INNAKM'
+          width={70}
+          placeholder='blur'
+          quality={100}
+        />
+      </Link>
+
+      <Link href="/">
+        <h1>INNAKM</h1>
+      </Link>
+
       <Link href="/portals" className={pathname === '/portals' ? 'active' : ''}>
         Portal
+      </Link>
+
+      <Link href="/raws" className={pathname === '/raws' ? 'active' : ''}>
+        Raw
       </Link>
     </nav>
   );
